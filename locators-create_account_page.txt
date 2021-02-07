@@ -1,0 +1,22 @@
+
+Amazon logo, search by $$, "i[class='a-icon a-icon-logo']"
+
+Create account, search by $$, "h1"
+
+Your name, search by $$, "input[id='ap_customer_name']"
+
+Email, search by $$, "input[id='ap_email']"
+
+Password, search by $$, "input[id='ap_password']"
+
+Re-enter password, search by $$, "input[id='ap_password_check']"
+
+Create your Amazon account, search by $$, "input[id='continue']"
+
+Conditions of use link, search by XPATH, "//a[text()='Conditions of Use']"
+
+Privacy Notice link, search by XPATH, "//a[text()='Privacy Notice']"
+
+Sign-In, search by $$, "a[class='a-link-emphasis']"
+
+
