@@ -15,3 +15,22 @@ Feature: Amazon Search Test
     And Click on Amazon search icon
     Then Product results for "Dress" are shown on Amazon
     And Page URL has Dress in it
+
+
+
+
+
+  Scenario: User can add a product to the cart
+    Given Open Amazon page
+    When Search for coffee mug
+    And Click on the first product
+    And Click on Add to cart button
+    Then Verify cart has 1 item
+
+ Scenario: User can add a product to the cart
+    Given Open Amazon page
+    When Search for shoes
+    And Click on the first product
+    And Select shoes size
+    And Click on Add to cart button
+    Then Verify cart has 1 item
