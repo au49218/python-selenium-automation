@@ -46,3 +46,9 @@ def verify_search_result(context, result_word):
 def verify_url_contains_query(context, query):
     # verify the query in current url
     assert query in context.driver.current_url, f'{query} not in {context.driver.current_url}'
+
+
+@given('Open Amazon Dress {productid} page')
+def open_dress_page(context, productid):
+    # open product ID page
+    context.driver.get(f'https://www.amazon.com/gp/product/{productid}')
