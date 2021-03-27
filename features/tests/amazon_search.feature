@@ -34,3 +34,15 @@ Feature: Amazon Search Test
     And Select shoes size
     And Click on Add to cart button
     Then Verify cart has 1 item
+
+   Scenario: User can select and search in a department
+     Given Open Amazon page
+     When Select department by alias stripbooks
+     And Search for Faust
+     Then Verify books department is selected
+
+   Scenario: User can select and search in a department
+     Given Open Amazon page
+     When Select department by alias software
+     And Search for Windows
+     Then Verify software department is selected
