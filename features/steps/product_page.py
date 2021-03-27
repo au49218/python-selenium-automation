@@ -38,6 +38,16 @@ def select_size(context):
     context.app.product_page.select_size()
 
 
+@when('Hover over Add to Cart button')
+def hover_add_to_cart_btn(context):
+    context.app.product_page.hover_add_to_cart_btn()
+
+
+@when('Hover over New Arrivals link')
+def hover_new_arrivals_link(context):
+    context.app.product_page.hover_new_arrivals_link()
+
+
 @then('Verify cart has {expected_count} item')
 def verify_cart_count(context, expected_count):
     # cart_count = context.driver.find_element(*CART).text
@@ -62,3 +72,13 @@ def verify_can_select_colors(context):
 
     # Verify selection of colors using Page Object
     context.app.product_page.verify_can_select_dress_colors()
+
+
+@then('Verify size selection tooltip is shown')
+def verify_size_selection_tooltip(context):
+    context.app.product_page.verify_size_selection_tooltip()
+
+
+@then('Verify the deals are shown')
+def verify_deals_display(context):
+    context.app.product_page.verify_deals_display()
