@@ -50,6 +50,11 @@ def input_search(context, search_word):
     context.app.main_page.click_search_amazon()
 
 
+@when('Select department by alias {alias}')
+def select_department(context, alias):
+    context.app.main_page.select_department(alias)
+
+
 @then('Product results for {result_word} are shown on Amazon')
 def verify_search_result(context, result_word):
 
@@ -83,3 +88,8 @@ def open_dress_page(context, productid):
 @when('Click on the first product')
 def click_first_product(context):
     context.app.search_results_page.click_first_product()
+
+
+@then('Verify {department} department is selected')
+def verify_department(context, department):
+    context.app.search_results_page.verify_department(department)
